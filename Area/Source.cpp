@@ -8,8 +8,8 @@ int main()
 {
 	/*Area(*new Rectangle());*/
 	/*Area(*new RightTriangle());*/
-	Area(*new Circle());
-
+	/*Area(*new Circle());*/
+	Area(*new Trapezoid());
 	system("pause");
 	return 0;
 }

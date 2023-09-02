@@ -61,3 +61,34 @@ void Circle::Area()
 	setArea(_pi*(_radius*_radius));
 	cout << "Area of circle - " << getArea() << " smth\n\n";
 }
+
+void Trapezoid::Area()
+{
+	cout << "TRAPEZOID\n";
+	do
+	{
+		cout << "Input value of side \"a\"(can't be 0): ";
+		cin >> _a;
+		if (_a != 0)break;
+		cout << "Invalid value!!!\n\n";
+
+	} while (_a == 0);
+	do
+	{
+		cout << "Input value of side \"b\"(can't be 0): ";
+		cin >> _b;
+		if (_b != 0)break;
+		cout << "Invalid value!!!\n\n";
+
+	} while (_b == 0);
+	do
+	{
+		cout << "Input value of height of the trapezoid (can't be 0): ";
+		cin >> _h;
+		if (_h != 0)break;
+		cout << "Invalid value!!!\n\n";
+
+	} while (_h == 0);
+	setArea(0.5*(_a + _b) *_h);
+	cout << "Area of trapezoid - " << getArea() << " smth\n\n";
+}
