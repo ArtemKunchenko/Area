@@ -45,3 +45,19 @@ void RightTriangle::Area()
 	setArea((_a * _b)/2);
 	cout << "Area of right-angled triangle - " << getArea() << " smth\n\n";
 }
+
+void Circle::Area()
+{
+	cout << "CIRCLE\n";
+	do
+	{
+		cout << "Input value of radius (can't be 0): ";
+		cin >> _radius;
+		if (_radius != 0)break;
+		cout << "Invalid value!!!\n\n";
+
+	} while (_radius == 0);
+	
+	setArea(_pi*(_radius*_radius));
+	cout << "Area of circle - " << getArea() << " smth\n\n";
+}

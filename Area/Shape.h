@@ -29,4 +29,12 @@ private:
 	double _a;
 	double _b;
 };
+class Circle : public Shape
+{
+public:
+	void Area() override;
+private:
+	double _radius;
+	const double _pi=3.14;
+};
 
