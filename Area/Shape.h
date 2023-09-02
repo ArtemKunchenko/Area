@@ -16,10 +16,17 @@ private:
 class Rectangle : public Shape
 {
 public:
-	void Area();
+	void Area() override;
 private:
 	double _a;
 	double _b;
 };
-
+class RightTriangle : public Shape
+{
+public:
+	void Area() override;
+private:
+	double _a;
+	double _b;
+};
 

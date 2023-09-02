@@ -6,7 +6,8 @@ void Area(Shape& shape) { shape.Area(); }
 
 int main()
 {
-	Area(*new Rectangle());
+	/*Area(*new Rectangle());*/
+	Area(*new RightTriangle());
 	system("pause");
 	return 0;
 }
